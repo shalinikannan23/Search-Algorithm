@@ -13,9 +13,11 @@ To write a program to perform linear search and binary search using python progr
 1.	Set two pointers low and high at the lowest and the highest positions respectively.
 2.	Find the middle element mid of the array ie. arr[(low + high)/2]
 3.	If x == mid, then return mid.Else, compare the element to be searched with m.
-4.	If x > mid, compare x with the middle element of the elements on the right side of mid. This is done by setting low to low = mid + 1.
-5.	Else, compare x with the middle element of the elements on the left side of mid. This is done by setting high to high = mid - 1.
-6.	Repeat steps 2 to 5 until low meets high
+4.	If x > mid, compare x with the middle element of the elements on the right side of mid.
+5.	This is done by setting low to low = mid + 1.
+6.	Else, compare x with the middle element of the elements on the left side of mid.
+7.  This is done by setting high to high = mid - 1.
+8.	Repeat steps 2 to 5 until low meets high
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
@@ -36,7 +38,8 @@ k = eval(input()) # k-item to be seared for
 n=len(array)
 array.sort()
 result = linearSearch(array,n,k)# use the function for linear search
-# use if-else to print sorted array and "Element not found" if the item is not present in the list otherwise print sorted array and "Element found at index: ", result
+# use if-else to print sorted array and "Element not found" if the item is not present in the list 
+otherwise print sorted array and "Element found at index: ", result
 if (result==-1):
     print(array,"\nElement not found")
 else:
@@ -50,7 +53,8 @@ Developed by: Shalini.k
 RegisterNumber: 212222240095
 '''
 def binarySearchIter(array, k, low, high):
-    # Write your code here to find the middle value and check if the desired item is above or below the middle value
+    # Write your code here to find the middle value and check if the desired item is above 
+    or below the middle value
     while low<=high:
         mid = low+(high - low)//2
         if array[mid] == k:
@@ -65,7 +69,8 @@ array = eval(input())
 array.sort()
 k = eval(input()) #k-item to be searched
 # use the binary search function to find the item in the list
-# use if-else to print sorted array and "Element not found" if the item is not present in the list otherwise print sorted array and "Element found at index: ", result
+# use if-else to print sorted array and "Element not found" if the item is not present in the list 
+otherwise print sorted array and "Element found at index: ", result
 result= binarySearchIter(array,k,0,len(array)-1)
 if(result==-1):
     print(array,"\nElement not found")
@@ -96,7 +101,8 @@ arr.sort()
 k = eval(input()) # k is the element to be searched for
 result= BinarySearch(arr,k,0,len(arr)-1)
 # use the binary search function to find the result
-# use if-else to print sorted array and "Element not found" if the item is not present in the list otherwise print sorted array and "Element found at index: ", result
+# use if-else to print sorted array and "Element not found" if the item is not present in the list 
+otherwise print sorted array and "Element found at index: ", result
 if(result==-1):
     print(arr,"\nElement not found")
 else:
