@@ -109,8 +109,7 @@ else:
     print(arr,"\nElement found at index: ",result)
 ```
 ## Sample Input and Output
-![Screenshot (138)](https://github.com/shalinikannan23/Search-Algorithm/assets/118656529/b7ec37d7-010d-4d2f-b442-d86bba9baab9)
-![Screenshot (139)](https://github.com/shalinikannan23/Search-Algorithm/assets/118656529/7993a130-5240-47d6-9a11-07dea702663b)
-![Screenshot (140)](https://github.com/shalinikannan23/Search-Algorithm/assets/118656529/6f883105-278b-4dce-b619-988b4f4e25c1)
+![image](https://github.com/shalinikannan23/Search-Algorithm/assets/118656529/bc369a0c-8a01-497c-9ea1-db67e5ff85e8)
+
 ## Result
 Thus the linear search and binary search algorithm is implemented using python programming.
